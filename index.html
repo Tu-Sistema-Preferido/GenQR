@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR Personalizado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <br><br>
+    <div class="container">
+        <h1>Generador de Códigos QR Personalizado</h1>
+        <input type="text" id="qrText" placeholder="Ingresa el texto o URL">
+        <br>
+        <label for="qrColor">Color del código QR:</label>
+        <input type="color" id="qrColor" value="#000000">
+        <br>
+        <label for="qrBgColor">Color de fondo:</label>
+        <input type="color" id="qrBgColor" value="#ffffff">
+        <br>
+        <label for="qrSize">Tamaño (px):</label>
+        <input type="number" id="qrSize" value="200" min="50" max="500">
+
+        <button onclick="generateQR()">Generar Código QR</button>
+        <br>
+        <canvas id="qrCanvas"></canvas>
+        <hr>
+        <a id="downloadLink" download="codigo_qr.png">Descargar Código QR</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

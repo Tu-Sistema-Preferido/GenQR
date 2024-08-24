@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+}
+
+h1{
+  font-size: 25px;
+}
+
+input[type="text"], input[type="color"], input[type="number"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+input[type="text"]:hover, input[type="color"]:hover, input[type="number"]:hover {
+    background-color: #707070;
+    font-color: #FFFFFF
+    transform: scale(0.95);
+}
+
+#qrText:hover{
+    color: #FFFFFF;
+}
+
+#qrColor:hover{
+    color: #FFFFFF;
+}
+
+#qrBgColor:hover{
+    color: #FFFFFF;
+}
+
+#qrSize:hover{
+    color: #FFFFFF;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #C42015;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff2414;
+    transform: scale(0.95);
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #15BC0C;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #20e916;
+    transform: scale(0.95);
+}
